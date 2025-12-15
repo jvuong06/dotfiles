@@ -1,0 +1,187 @@
+/* --- Import Theme --- */
+@import "./theme.css";
+
+/* --- Global Styles --- */
+* {
+  font-family: "JetBrainsMono Nerd Font", "Inter", "Segoe UI", "NotoSans Nerd Font",
+    sans-serif;
+  font-size: 13px;
+  min-height: 0;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+/* --- Waybar Container --- */
+#waybar {
+  background: rgba(24, 25, 38, 0.6);
+  color: @main-fg;
+  margin: 0px;
+  font-weight: 500;
+}
+
+/* --- Left Modules --- */
+#workspaces
+ {
+  color: @main-fg;
+  background-color: rgba(24, 25, 38, 0.2);
+
+  padding: 0.3rem 0.7rem;
+
+  border: none;
+
+  min-width: 0;
+
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+#workspaces {
+  padding: 2px;
+  margin-right: 5px;
+}
+
+/* Hover effects for left modules */
+#custom-uptime:hover,
+#cpu:hover {
+  background-color: @main-bg;
+}
+
+#workspaces button {
+  color: @text;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0px;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  outline: none;
+}
+
+#workspaces button.focused {
+  color: #99d1db;
+  background-color: rgba(153, 209, 219, 0.2);
+}
+
+#workspaces button.urgent {
+  color: #e78284;
+  background-color: rgba(231, 130, 132, 0.1);
+}
+
+#workspaces button:hover {
+  background: @hover-bg;
+  color: #c6d0f5;
+}
+
+/* --- Center Module --- */
+#clock {
+  color: @lavender;
+  padding: 0.3rem 0.7rem;
+ 
+  border: none;
+  min-width: 0;
+  transition:
+    background-color 0.2s ease-in-out, 
+    color 0.2s ease-in-out;
+}
+
+#clock:hover {
+  background-color: @hover-bg;
+  color: @hover-fg;
+}
+
+/* --- Right Modules --- */
+#bluetooth,
+#pulseaudio,
+#backlight,
+#network,
+#custom-lock,
+#battery, 
+#clock {
+  background-color: rgba(24, 25, 38, 0.2);
+
+  padding: 0.3rem 0.7rem;
+
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  min-width: 0;
+ 
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}
+
+#bluetooth:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#network:hover,
+#custom-lock:hover,
+#battery:hover {
+  background-color: @hover-bg;
+}
+
+#bluetooth {
+  margin-left: 0px;
+}
+
+#battery {
+  margin-right: 0px;
+}
+
+/* --- Colors --- */
+#custom-uptime {
+  color: #babbf1;
+}
+#cpu {
+  color: #c6d0f5;
+}
+#clock {
+  color: @sky;
+  font-weight: 500;
+}
+#pulseaudio {
+  color: @mauve;
+}
+#backlight {
+  color: @yellow;
+}
+#network {
+  color: @lavender;
+}
+#network.disconnected {
+  color: @flamingo;
+}
+#custom-lock {
+  color: #babbf1;
+}
+#bluetooth {
+  color: @teal;
+  font-size: 16px;
+}
+#bluetooth.on {
+  color: @sapphire;
+}
+#bluetooth.connected {
+  color: @sapphire;
+}
+#battery {
+  color: @teal;
+}
+#battery.charging {
+  color: @charging;
+}
+#battery.warning:not(.charging) {
+  color: @yellow;
+}
+
+/* --- Tooltip Styles --- */
+tooltip {
+  background-color: @main-bg;
+  color: @main-fg;
+  padding: 5px 12px;
+  margin: 5px 0px;
+  border: @main-br;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
