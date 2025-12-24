@@ -1,0 +1,24 @@
+name = "powermenu"
+name_pretty = "Power Menu"
+parent = "settings"
+
+[[entries]]
+icon = "system-lock-screen-symbolic"
+text = "Lock"
+actions = { "Lock Screen" = "loginctl lock-session" }
+[[entries]]
+icon = "system-log-out-symbolic"
+text = "Logout"
+actions = { "Log Out" = "hyprctl dispatch exit"}
+[[entries]]
+icon = "weather-clear-night-symbolic"
+text = "Sleep"
+actions = { "Sleep" = "systemctl suspend"}
+[[entries]]
+icon = "system-shutdown-symbolic"
+text = "Shut Down"
+actions = { "Shut Down" = "systemctl poweroff"}
+[[entries]]
+icon = "system-reboot-symbolic"
+text = "Reboot"
+actions = { "Reboot" = "systemctl reboot" }

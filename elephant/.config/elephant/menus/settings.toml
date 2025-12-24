@@ -1,0 +1,22 @@
+name = "settings"
+name_pretty = "Settings"
+fixed_order = true
+value = "parent"
+
+[[entries]]
+icon = "network-wireless"
+text = "Wifi"
+keywords = ["wifi", "connection", "wireless"]
+submenu = "wifi"
+
+[[entries]]
+icon = "bluetooth"
+text = "Bluetooth"
+keywords = ["bluetooth", "device"]
+actions = { open = "walker -m bluetooth"}
+
+[[entries]]
+icon = "gnome-power-manager-symbolic"
+text = "Power Menu"
+keywords = ["logout", "shutdown", "sleep", "restart", "reboot", "poweroff"]
+submenu = "powermenu"

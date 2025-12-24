@@ -1,0 +1,12 @@
+# AUR packages that can be installed using yay
+
+walker-bin
+elephant-all-bin
+gnome-themes-extra-gtk2
+adwaita-qt5-git
+adwaita-qt6-git
+qt5-base
+quickshell
+sddm-silent-theme-git
+vesktop
+visual-studio-code-bin
