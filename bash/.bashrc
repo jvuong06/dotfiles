@@ -16,3 +16,4 @@ eval "$(starship init bash)"
 
 source ~/.bashrc.d/aliases.bashrc
 source ~/.bashrc.d/path.bashrc
+source ~/.bashrc.d/git.bashrc
