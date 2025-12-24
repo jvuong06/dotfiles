@@ -8,8 +8,6 @@ return {
             flavour = 'mocha',
             transparent_background = true,
         },
-        config = function(_, opts)
-            require('catppuccin').setup(opts)
-        end,
+        config = true,
     },
 }
