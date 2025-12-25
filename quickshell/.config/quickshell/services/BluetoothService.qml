@@ -10,23 +10,22 @@ Singleton {
     property BluetoothAdapter adapter: Bluetooth.defaultAdapter
     property int state: adapter ? adapter.state : 0
     property bool connected: {
-        if (!adapter || !adapter.devices) {
-            return false
-        }
+        adapter
+            .devices
+            .values
+            .forEach(dev => { 
+                if (dev.connected) {
+                    return true
+                }
+            });
 
-        let isConnected = false
-        adapter.devices.values.forEach(dev => { if (dev.connected) isConnected = true })
-        return isConnected
+        return false;
     }
     property string icon: {
         let res;
         switch (state) {
             case BluetoothAdapterState.Enabled:
-                if (connected) {
-                    res = "󰂱";
-                } else {
-                    res = "󰂯";
-                }
+                res = connected ? "󰂱" : "󰂯"
                 break;
             default:
                 res = "󰂲";
@@ -34,21 +33,5 @@ Singleton {
 
         return res;
     } 
-    property string color: {
-        let res;
-        switch(state) {
-            case BluetoothAdapterState.Enabled:
-                if (connected) {
-                    res = Colors.bt_connected;
-                } else {
-                    res = Colors.bt_on;
-                }
-                break;
-            default:
-                res = Colors.bt_off;
-                break;
-        }
-
-        return res;
-    }
+    property string color: Colors.color_fg
 }
