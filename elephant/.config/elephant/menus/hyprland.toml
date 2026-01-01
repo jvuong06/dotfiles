@@ -1,0 +1,16 @@
+name = "hyprland"
+name_pretty = "Hyprland"
+parent = "settings"
+
+[[entries]]
+text = "Hyprlock"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/ --command nvim hyprlock.conf" }
+[[entries]]
+text = "Hypridle"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/ --command nvim hypridle.conf" }
+[[entries]]
+text = "Hyprpaper"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/ --command nvim hyprpaper.conf" }
+[[entries]]
+text = "Modules"
+submenu = "hyprland-modules"

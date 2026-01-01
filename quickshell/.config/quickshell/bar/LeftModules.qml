@@ -10,6 +10,7 @@ Row {
     }
 
     spacing: 10
-
+    
+    Lock {}
     Workspaces {}
 }

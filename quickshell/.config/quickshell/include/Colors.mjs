@@ -1,8 +1,9 @@
 /* Color Constants */
-export const color_fg = "#ffffff";
-export const color_uf = "#666666";
-export const color_bg = "#000000";
-export const color_bg2 = "#272727"
+export const color_fg = "#ffffffff";
+export const color_uf = "#44ffffff";
+export const color_bg = "#ff000000";
+export const color_bg2 = "#27000000";
+export const color_itembg = "#88000000"
 export const color_hv = "#60ffffff";
 export const color_warn = "#e08d9a";
 

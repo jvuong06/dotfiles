@@ -2,8 +2,10 @@ import QtQuick
 import qs.services
 import "../include/Colors.mjs" as Colors
 
-SystemItem { 
+SystemItem {
     textIcon: TimeService.time
     textColor: Colors.color_fg;
     fontSize: 12
+    centered: true
+    padding: 10
 }

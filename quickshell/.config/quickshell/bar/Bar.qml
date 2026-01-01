@@ -7,7 +7,7 @@ import "../include/Colors.mjs" as Colors
 Scope { 
     PanelWindow {
         id: bar
-        implicitHeight: 30
+        implicitHeight: 35
         color: Colors.color_bg
 
         anchors {

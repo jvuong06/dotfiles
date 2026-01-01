@@ -1,0 +1,28 @@
+name = "hyprland-modules"
+name_pretty = "Hyprland Modules"
+parent = "hyprland"
+
+[[entries]]
+text = "Monitors"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/modules --command nvim monitors.conf"}
+[[entries]]
+text = "Programs"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/modules --command nvim programs.conf"}
+[[entries]]
+text = "Startup"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/modules --command nvim autostart.conf" }
+[[entries]]
+text = "Environment Variables"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/modules --command nvim programs.conf" }
+[[entries]]
+text = "Look and Feel"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/modules --command nvim looknfeel.conf" }
+[[entries]]
+text = "Input"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/modules --command nvim input.conf" }
+[[entries]]
+text = "Keybinds"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/modules --command nvim keybinds.conf"}
+[[entries]]
+text = "Windows"
+actions = { open = "alacritty --class alacritty-walker --working-directory ~/.config/hypr/modules --command nvim windows.conf"}

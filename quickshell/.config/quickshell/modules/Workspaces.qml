@@ -5,6 +5,7 @@ import QtQuick
 import "../include/Colors.mjs" as Colors
 
 Rectangle {
+    anchors.verticalCenter: parent.verticalCenter
     color: Colors.color_bg2
     height: root.implicitHeight + root.spacing * 2
     width: root.implicitWidth + root.spacing * 2

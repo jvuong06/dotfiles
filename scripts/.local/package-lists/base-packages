@@ -3,6 +3,7 @@
 alacritty
 bluetui
 bottom
+cmake
 dunst
 firefox
 font-manager
@@ -27,6 +28,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 obsidian
+okular
 qt5-svg
 qt5-imageformats
 qt5-multimedia

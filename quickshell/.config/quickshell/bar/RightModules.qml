@@ -9,7 +9,7 @@ Row {
         rightMargin: 10
     }
 
-    spacing: 5
+    spacing: 0
 
     Bluetooth {}
     Wifi {}

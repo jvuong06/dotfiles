@@ -4,19 +4,26 @@ fixed_order = true
 value = "parent"
 
 [[entries]]
-icon = "network-wireless"
+icon = "video-display-symbolic"
+text = "Hyprland Config"
+keywords = ["hyprland", "hypr", "hyprland"]
+submenu = "hyprland"
+
+[[entries]]
+icon = "network-wireless-symbolic"
 text = "Wifi"
 keywords = ["wifi", "connection", "wireless"]
 submenu = "wifi"
 
 [[entries]]
-icon = "bluetooth"
+icon = "bluetooth-symbolic"
 text = "Bluetooth"
 keywords = ["bluetooth", "device"]
 actions = { open = "walker -m bluetooth"}
 
 [[entries]]
-icon = "gnome-power-manager-symbolic"
+icon = "system-shutdown-symbolic"
 text = "Power Menu"
 keywords = ["logout", "shutdown", "sleep", "restart", "reboot", "poweroff"]
 submenu = "powermenu"
+
