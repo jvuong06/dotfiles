@@ -9,7 +9,7 @@ set.expandtab = true
 
 set.smartindent = true
 
-set.wrap = true
+set.wrap = false
 set.linebreak = true
 set.textwidth = 0
 set.wrapmargin = 0

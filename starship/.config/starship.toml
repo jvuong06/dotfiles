@@ -4,6 +4,7 @@ format = """
 $username\
 $hostname\
 $directory\
+$python\
 $git_branch\
 $git_commit\
 $character\

@@ -21,6 +21,7 @@ Singleton {
 
         return false;
     }
+
     property string icon: {
         let res;
         switch (state) {

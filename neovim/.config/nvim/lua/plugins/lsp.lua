@@ -1,5 +1,5 @@
 -- List all LSP servers here
-local lsp_servers = { 'lua_ls', 'clangd', "ts_ls", "qmlls" }
+local lsp_servers = { 'lua_ls', 'clangd', "ts_ls", "qmlls", "pyright", "cssls", "emmet_ls", "html" }
 
 return {
     {
